@@ -1,0 +1,33 @@
+﻿@model ChatWeb.Models.ViewModels.UserAccessViewModel
+
+@{
+    ViewBag.Title = "Inicio de Sesion";
+    Layout = null;
+    Layout = "~/views/Shared/_LayoutLogin.cshtml";
+
+    string error = (string)ViewBag.error;
+}
+
+<h2>@ViewBag.Title</h2>
+<div class="row">
+    <div class="col-lg-12 col-lg-offset-3">
+
+        <div class="text-danger">@error</div>
+        <form action="/Home/Login" method="post">
+
+
+            @Html.LabelFor(d => d.Email)
+            @Html.TextBoxFor(d => d.Email, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.Email, "", new { @class = "text-danger" }) <br />
+
+            @Html.LabelFor(d => d.Password)
+            @Html.PasswordFor(d => d.Password, new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.Password, "", new { @class = "text-danger" })<br />
+                                 
+            <input type="submit" value="Login" class="btn btn-primary" />
+        </form>
+
+
+    </div>
+
+</div>
