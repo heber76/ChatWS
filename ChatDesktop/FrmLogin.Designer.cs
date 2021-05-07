@@ -52,6 +52,7 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(152, 26);
             this.txtUser.TabIndex = 1;
+            this.txtUser.Text = "heber@hotmail.com";
             // 
             // txtPass
             // 
@@ -61,6 +62,7 @@
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(152, 26);
             this.txtPass.TabIndex = 2;
+            this.txtPass.Text = "123456";
             // 
             // label1
             // 
@@ -82,7 +84,7 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Contraseña :";
             // 
-            // frmLogin
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,7 +97,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmLogin";
+            this.Name = "FrmLogin";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aceso";
